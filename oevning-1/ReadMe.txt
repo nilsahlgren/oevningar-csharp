@@ -8,6 +8,7 @@ Register - En klass för register.
 
 Employee - En klass för anställda.
 
+
 Uppgift 2: Attribut
 
 Register - Employees, en lista över anställda.
