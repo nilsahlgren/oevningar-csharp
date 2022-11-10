@@ -120,25 +120,25 @@ namespace oevning_3
                 }
             }
             Console.WriteLine();
-            //3.8 Skapa en lista för hundar.
+            //4.8 Skapa en lista för hundar.
             List<Dog> dogs = new List<Dog>();
-            //3.9 F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
+            //4.9 F: Försök att lägga till en häst i listan av hundar. Varför fungerar inte det?
             //dogs.Add(new Horse("Click Bait", 6, 600, "Wui-Hihi", "Trotter")) // <- "Cannot convert from Horse to Dog"
             //    S: Dog och Horse är två olika subklasser till animal, de har en syskonrelation. Horse hade behövt vara ett barn till Dog för att det ska funka.
-            //3.10 F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans ?
+            //4.10 F: Vilken typ måste listan vara för att alla klasser skall kunna lagras tillsammans ?
             //     S: Animal
 
-            //11.Skriv ut samtliga Animals Stats() genom en foreach loop.
-            //12.Testa och se så det fungerar.
+            //4.11 Skriv ut samtliga Animals Stats() genom en foreach loop.
+            //4.12 Testa och se så det fungerar.
             foreach (Animal animal in zoo)
             {
                 Console.WriteLine(animal.Stats());
             }
             Console.WriteLine();
-            //3.13 F: Förklara vad det är som händer.
+            //4.13 F: Förklara vad det är som händer.
             //     S: för varje animal i listan zoo så anropas metoden Stats(), vilken finns skriven i varje klass och därför skriver ut samtliga properties inklusive de unika för respektive djur. 
 
-            //3.14 Skriv ut Stats() metoden enbart för alla hundar genom en foreach på Animals.
+            //4.14 Skriv ut Stats() metoden enbart för alla hundar genom en foreach på Animals.
             foreach (Animal animal in zoo)
             {
                 if (animal is Dog)
@@ -148,13 +148,13 @@ namespace oevning_3
             }
             Console.WriteLine();
 
-            //3.15 Skapa en ny metod med valfritt namn i klassen Dog som endast returnerar en valfri sträng.
-            //3.16 Kommer du åt den metoden från Animals listan ?
+            //4.15 Skapa en ny metod med valfritt namn i klassen Dog som endast returnerar en valfri sträng.
+            //4.16 Kommer du åt den metoden från Animals listan ?
             //zoo.UniqueDogMethod() // <- List<Animal> does not contain a definition for UniqueDogMethod()
-            //3.17 F: Varför inte ?
+            //4.17 F: Varför inte ?
             //     S: Metoden är definierad på klassen dog, zoo är ett objekt av klassen (?) List<Animal>.
 
-            //18.Hitta ett sätt att skriva ut din nya metod för dog genom en foreach på Animals.
+            //4.18 Hitta ett sätt att skriva ut din nya metod för dog genom en foreach på Animals.
 
             foreach (Animal animal in zoo)
             {
