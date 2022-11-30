@@ -5,14 +5,12 @@ namespace test_oevning_5
 {
     public class GarageUnitTest
     {
-        /// <summary>
-        /// Publika Metoder i garage:
-        /// 
-        /// Capacity()
-        /// Park(T vehicle)
-        /// Unpark(string regNbr)
-        /// 
-        /// </summary>
+        // Publika Metoder i garage:
+        // 
+        // Capacity()
+        // Park(T vehicle)
+        // Unpark(string regNbr)
+
         [Fact]
         public void Capacity_AfterInstantiatingGarage_ReturnsCorrectValue()
         {
