@@ -89,7 +89,7 @@ namespace oevning_4
             Console.WriteLine("\nEnter +Adam to add Adam, -Adam to remove Adam or 0 to exit");
             do
             {
-                string input = Console.ReadLine();
+                string input = Console.ReadLine()!;
                 char nav = input[0];
                 string value = input.Substring(1);
 
@@ -222,7 +222,6 @@ namespace oevning_4
 
             for (int i = 0; i < input.Length; i++)
             {
-                Console.WriteLine(input[i]);
                 theStack.Push(input[i]);
             }
 
